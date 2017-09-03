@@ -1,88 +1,74 @@
-/* MAIN STYLING */
-* {
-    font-family: monospace;
-}
-h1 {
-    text-align: center;
+body {
+    transiton: 0.5s linear;
+    background: #1c92d2;
+    text-shadow: 0 0 3px 1px #333;
 }
 
 #container {
-    position: relative;
-    float: left;
-    left: 25%;
-    margin: 0 auto;
     width: 50%;
-    height: 250px;
-    border: 1px solid black;
+    height: 200px;
+    margin: 10% auto;
+    padding-bottom: 2%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 2px #333;
 }
 
-#location {
-    position: relative;
-    float: left;
-    text-align: center;
-    top: 25%;
-    left: 10%;
-    display: inline-block;
-    border-radius: 5px;
-    width: 175px;
-    height: 100px;
-    margin-right: 10px;
-    background-color: #E0E0E0;
+header {
+    margin: 2%e;
 }
 
-#description {
-    position: relative;
-    float: left;
-    text-align: center;
-    top: 25%;
-    left: 10%;
-    display: inline-block;
-    border-radius: 5px;
-    width: 175px;
-    height: 100px;
-    margin-right: 10px;
-    background-color: #E0E0E0;
+#date, #city {
+    margin: 2%;
 }
 
-#icon {
-    position: relative;
+#date {
     float: left;
-    text-align: center;
-    top: 25%;
-    left: 10%;
-    display: inline-block;
-    border-radius: 5px;
-    width: 175px;
-    height: 100px;
-    background-color: #E0E0E0;
 }
+
+#city {
+    float: right;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+section {
+    clear: both;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+main {
+    display: table;
+    margin: 0 auto 10% auto;
+    height: auto;
+    border: 1px solid grey;
+}
+
+i, img {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+button {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 50% auto;
+}
+
+img {
+    width: 5em;
+    height: auto;
+    filter: grayscale(1);
+}
+
 
 #tempature {
-    margin-top: 5px;
-    position: relative;
-    top: 50%;
-    left: -20%;
-    display: inline-block;
-    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    margin-right: 2%;
 }
 
-#icon-image {
-    position: relative;
-    float: left;
-    left: 25%;
-    width: 48px;
-    height: 48px;
-}
-
-p {
-    font-size: 1.25em;
-}
-
-span {
-    color: #006064;
-    font-size: 1.25em;
-    margin-top: 5px;
-    position: relative;
-    top: 50%;
-    left: -20%;
-}

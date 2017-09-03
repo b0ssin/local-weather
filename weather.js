@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Setting variables
-    let bodyArray = document.getElementsByTagName("body");
-    let body = bodyArray[0];
-    let container = body.children[1];
-    let location = container.children[0];
-    let description = container.children[1];
-    let icon = container.children[2];
+
+    function setGradient(description) {
+        let descriptionsToGradients {
+            rain: ""
+        }
+    }
+
 
     // success and error f(x) for getCurrentPosition
 
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
         let location = data.name;
         let iconCode = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
         let temp = data.main.temp; //Kelvin
-        let descriptionElement = document.getElementById("description-text");
-        let iconElement = document.getElementById("icon-image");
-        let locationElement = document.getElementById("location-text");
+        let descriptionElement = document.getElementById("description");
+        let iconElement = document.getElementById("icon");
+        let locationElement = document.getElementById("city");
         let tempElement = document.getElementById("tempature");
         descriptionElement.innerHTML = description;
         iconElement.src = iconCode;
